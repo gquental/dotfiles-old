@@ -34,3 +34,14 @@ bind -r L resize-pane -R 5
 
 # disable mouse to enforce learing
 setw -g mode-mouse off
+
+# movement as vi
+setw -g mode-keys vi
+
+# change copy mode
+unbind [
+bind Escape copy-mode
+unbind p
+bind p paste-buffer
+bind -t vi-copy 'v' begin-selection
+bind -t vi-copy 'y' copy-selection
