@@ -1,10 +1,10 @@
-#unbind prefix and set to ctrl+a
+# unbind prefix and set to ctrl+a
 unbind C-b
 set -g prefix C-a
 bind C-a send-prefix
 
 
-#set escape time
+# set escape time
 set -s escape-time 1
 
 # change index of windows and panes to 1
@@ -13,3 +13,21 @@ setw -g pane-base-index 1
 
 # shortcut to reload tmux configuration
 bind r source-file ~/.tmux.conf \; display "Config reloaded!"
+
+# shortcuts to split panes
+bind | split-window -h
+bind - split-window -v
+
+# shortcut for movements and controlling panes
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+bind -r C-h select-window -t :-
+bind -r C-l select-window -t :+
+
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
+bind -r L resize-pane -R 5
