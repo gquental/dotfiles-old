@@ -2,3 +2,11 @@
 unbind C-b
 set -g prefix C-a
 bind C-a send-prefix
+
+
+#set escape time
+set -s escape-time 1
+
+#change index of windows and panes to 1
+set -g base-index 1
+setw -g pane-base-index 1
