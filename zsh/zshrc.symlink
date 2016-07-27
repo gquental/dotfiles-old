@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/Users/gquental/Library/Android/sdk/platform-tools:/Users/gquental/Library/Android/sdk/tools:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -74,13 +74,10 @@ export EDITOR='nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export GOPATH='/Users/gquental/projects/go'
+export GOPATH=$HOME'/projects/go'
 
 export EDITOR=vim
 
 export JAVA_HOME=$(/usr/libexec/java_home)
-
-export ANDROID_HOME=/Users/gquental/Library/Android/sdk
-export M2_HOME=/usr/local/Cellar/maven/3.3.3/libexec
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
