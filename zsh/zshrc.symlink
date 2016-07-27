@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/gquental/Library/Android/sdk/platform-tools:/Users/gquental/Library/Android/sdk/tools:/usr/local/go/bin:/usr/local/Cellar/git/2.9.2/bin"
+export PATH="/usr/local/bin:/Users/gquental/Library/Android/sdk/platform-tools:/Users/gquental/Library/Android/sdk/tools:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
