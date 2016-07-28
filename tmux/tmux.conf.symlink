@@ -1,3 +1,6 @@
+# color
+set -g default-terminal "screen-256color"
+
 # unbind prefix and set to ctrl+a
 unbind C-b
 set -g prefix C-a
