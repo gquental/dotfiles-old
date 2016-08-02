@@ -1,3 +1,9 @@
+" change leader to comma
+let mapleader = ","
+let g:mapleader = ","
+set encoding=utf8
+set guifont=DroidSansMonoForPowerline\ Nerd\ Font:h11
+
 " Section Plugins {{{
 call plug#begin('~/.config/nvim/plugged')
 
@@ -16,7 +22,9 @@ Plug 'tpope/vim-surround' " mappings to easily delete, change and add such surro
 Plug 'tpope/vim-sleuth' " detect indent style (tabs vs. spaces)
 Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
 Plug 'vim-airline/vim-airline' " fancy statusline
+Plug 'vim-airline/vim-airline-themes' " themes for vim-airline"
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'editorconfig/editorconfig-vim' " .editorconfig support
 
 function! DoRemote(arg)
   UpdateRemotePlugins
@@ -65,3 +73,10 @@ nmap <silent> <leader>k :NERDTreeToggle<cr>
 nmap <silent> <leader>y :NERDTreeFind<cr>
 
 set number " show line numbers
+
+let g:airline_powerline_fonts=1
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline_theme='dracula'
+
+
