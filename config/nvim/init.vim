@@ -11,6 +11,11 @@ Plug 'moll/vim-node', { 'for': 'javascript' } " node support
 Plug 'othree/yajs.vim', { 'for': 'javascript' }   " JavaScript syntax plugin
 Plug 'elzr/vim-json', { 'for': 'json' } " JSON support
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim' " fuzzy file finder and so much more
+Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' " file drawer
+Plug 'tpope/vim-surround' " mappings to easily delete, change and add such surroundings in pairs, such as quotes, parens, etc.
+Plug 'tpope/vim-sleuth' " detect indent style (tabs vs. spaces)
+Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
+Plug 'vim-airline/vim-airline' " fancy statusline
 
 function! DoRemote(arg)
   UpdateRemotePlugins
@@ -44,6 +49,8 @@ nmap <silent> <leader>t :GFiles<cr>
 nmap <silent> <leader>r :Buffers<cr>
 nmap <silent> <leader>e :GFiles?<cr>
 
+filetype plugin indent on
+
 " NERDTree
 " close NERDTree after a file is opened
 let g:NERDTreeQuitOnOpen=0
@@ -55,3 +62,5 @@ let NERDTreeIgnore = ['\.js.map$']
 nmap <silent> <leader>k :NERDTreeToggle<cr>
 " expand to the path of the file in the current buffer
 nmap <silent> <leader>y :NERDTreeFind<cr>
+
+set number " show line numbers
