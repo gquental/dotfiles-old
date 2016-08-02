@@ -10,6 +10,7 @@ Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' } " JavaScript indent supp
 Plug 'moll/vim-node', { 'for': 'javascript' } " node support
 Plug 'othree/yajs.vim', { 'for': 'javascript' }   " JavaScript syntax plugin
 Plug 'elzr/vim-json', { 'for': 'json' } " JSON support
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim' " fuzzy file finder and so much more
 
 function! DoRemote(arg)
   UpdateRemotePlugins
@@ -37,3 +38,8 @@ let g:tern_show_signature_in_pum = 0  " This do disable full signature type on a
 " Use tern_for_vim.
 let g:tern#command = ["tern"]
 let g:tern#arguments = ["--persistent"]
+
+" fzf
+nmap <silent> <leader>t :GFiles<cr>
+nmap <silent> <leader>r :Buffers<cr>
+nmap <silent> <leader>e :GFiles?<cr>
