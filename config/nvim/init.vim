@@ -16,6 +16,7 @@ Plug 'tpope/vim-surround' " mappings to easily delete, change and add such surro
 Plug 'tpope/vim-sleuth' " detect indent style (tabs vs. spaces)
 Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
 Plug 'vim-airline/vim-airline' " fancy statusline
+Plug 'zchee/deoplete-go', { 'do': 'make'}
 
 function! DoRemote(arg)
   UpdateRemotePlugins

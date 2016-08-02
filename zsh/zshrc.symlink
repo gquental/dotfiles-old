@@ -35,6 +35,7 @@ export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export EDITOR=nvim
 
 export GOPATH=$HOME'/projects/go'
+export PATH="$PATH:$GOPATH/bin"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
