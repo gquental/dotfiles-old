@@ -1,8 +1,6 @@
 " change leader to comma
 let mapleader = ","
 let g:mapleader = ","
-set encoding=utf8
-set guifont=DroidSansMonoForPowerline\ Nerd\ Font:h11
 
 " Section Plugins {{{
 call plug#begin('~/.config/nvim/plugged')
