@@ -23,6 +23,7 @@ Plug 'vim-airline/vim-airline' " fancy statusline
 Plug 'vim-airline/vim-airline-themes' " themes for vim-airline"
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'editorconfig/editorconfig-vim' " .editorconfig support
+Plug 'fatih/vim-go', { 'for': 'go' } " go support
 
 function! DoRemote(arg)
   UpdateRemotePlugins
