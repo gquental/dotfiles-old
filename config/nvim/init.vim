@@ -79,3 +79,10 @@ let g:airline_right_sep=''
 let g:airline_theme='dracula'
 
 set clipboard=unnamed
+
+" disable mouse
+set mouse=c
+
+" Fugitive
+nmap <silent> <leader>gs :Gstatus<cr>
+nmap <leader>ge :Gedit<cr>
