@@ -24,6 +24,12 @@ Plug 'vim-airline/vim-airline-themes' " themes for vim-airline"
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'editorconfig/editorconfig-vim' " .editorconfig support
 Plug 'fatih/vim-go', { 'for': 'go' } " go support
+Plug 'mattn/emmet-vim', { 'for': 'html' } " emmet support for vim - easily create markdup wth CSS-like syntax
+Plug 'gregsexton/MatchTag', { 'for': 'html' } " match tags in html, similar to paren support
+Plug 'othree/html5.vim', { 'for': 'html' } " html5 support
+" Plug 'pangloss/vim-javascript', { 'for': 'javascript' } " JavaScript support
+Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' } " JavaScript indent support
+Plug 'hail2u/vim-css3-syntax', { 'for': 'css' } " CSS3 syntax support
 
 function! DoRemote(arg)
   UpdateRemotePlugins
@@ -42,7 +48,7 @@ let g:solarized_termcolors=16
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 set background=dark
-colorscheme solarized
+colorscheme dracula
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
