@@ -51,9 +51,3 @@ bind -t vi-copy 'y' copy-selection
 
 bind C-c run "tmux save-buffer - | reattach-to-user-namespace pbcopy"
 bind C-v run "tmux set-buffer $(reattach-to-user-namespace pbpaste); tmux paste-buffer"
-
-# maximizing and restoring windows
-unbind Up
-bind Up new-window -d -n fullscreen \; swap-pane -s fullscreen.1 \; select-window -t fullscreen
-unbind Down
-bind Down last-window \; swap-pane -s fullscreen.1 \; kill-window -t fullscreen
