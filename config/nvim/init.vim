@@ -93,3 +93,9 @@ set mouse=c
 " Fugitive
 nmap <silent> <leader>gs :Gstatus<cr>
 nmap <leader>ge :Gedit<cr>
+
+" Disable arrows
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
