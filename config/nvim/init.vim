@@ -30,6 +30,7 @@ Plug 'othree/html5.vim', { 'for': 'html' } " html5 support
 " Plug 'pangloss/vim-javascript', { 'for': 'javascript' } " JavaScript support
 Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' } " JavaScript indent support
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' } " CSS3 syntax support
+Plug 'christoomey/vim-tmux-navigator'
 
 function! DoRemote(arg)
   UpdateRemotePlugins
