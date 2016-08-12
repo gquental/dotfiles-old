@@ -64,6 +64,7 @@ let g:tern#arguments = ["--persistent"]
 nmap <silent> <leader>t :GFiles<cr>
 nmap <silent> <leader>r :Buffers<cr>
 nmap <silent> <leader>e :GFiles?<cr>
+nmap <silent> <leader>f :BLines<cr>
 
 filetype plugin indent on
 
