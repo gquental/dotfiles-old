@@ -38,6 +38,7 @@ function! DoRemote(arg)
 endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'carlitux/deoplete-ternjs'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
