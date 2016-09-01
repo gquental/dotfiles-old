@@ -67,6 +67,7 @@ nmap <silent> <leader>r :Buffers<cr>
 nmap <silent> <leader>e :GFiles?<cr>
 nmap <silent> <leader>f :BLines<cr>
 
+nmap <silent> <leader>gc :Gcommit -S<cr>
 filetype plugin indent on
 
 " NERDTree
