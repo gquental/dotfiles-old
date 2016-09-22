@@ -1,0 +1,119 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/4f/1630q78123d4x2k0zc87str00000gn/T/d-116821-7233-12pwp8m/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/4f/1630q78123d4x2k0zc87str00000gn/T/d-116821-7233-12pwp8m/package.tgz",
+        "spec": "/private/var/folders/4f/1630q78123d4x2k0zc87str00000gn/T/d-116821-7233-12pwp8m/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/4f/1630q78123d4x2k0zc87str00000gn/T/apm-install-dir-116821-7233-wiezrf"
+    ]
+  ],
+  "_from": "../d-116821-7233-12pwp8m/package.tgz",
+  "_id": "tester-go@1.0.6",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/tester-go",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/4f/1630q78123d4x2k0zc87str00000gn/T/d-116821-7233-12pwp8m/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/4f/1630q78123d4x2k0zc87str00000gn/T/d-116821-7233-12pwp8m/package.tgz",
+    "spec": "/private/var/folders/4f/1630q78123d4x2k0zc87str00000gn/T/d-116821-7233-12pwp8m/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-116821-7233-12pwp8m/package.tgz",
+  "_shasum": "ea17a4805479363dd477f25d2e0dad33f8da11fa",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/4f/1630q78123d4x2k0zc87str00000gn/T/d-116821-7233-12pwp8m/package.tgz",
+  "_where": "/private/var/folders/4f/1630q78123d4x2k0zc87str00000gn/T/apm-install-dir-116821-7233-wiezrf",
+  "author": {
+    "name": "Joe Fitzgerald",
+    "email": "jfitzgerald@pivotal.io",
+    "url": "http://github.com/joefitzgerald"
+  },
+  "bugs": {
+    "url": "https://github.com/joefitzgerald/tester-go/issues"
+  },
+  "configSchema": {
+    "runCoverageOnSave": {
+      "title": "Run Coverage Tool On Save",
+      "description": "Run `go test -coverprofile` each time a file is saved",
+      "type": "boolean",
+      "default": false,
+      "order": 1
+    },
+    "runCoverageWithShortFlag": {
+      "title": "Run Coverage With Short Flag Set",
+      "description": "Runs `go test` with `-short` flag set",
+      "type": "boolean",
+      "default": true,
+      "order": 2
+    }
+  },
+  "consumedServices": {
+    "go-config": {
+      "versions": {
+        "1.0.0": "consumeGoconfig"
+      }
+    },
+    "go-get": {
+      "versions": {
+        "1.0.0": "consumeGoget"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "4.2.0",
+    "lodash": "^4.15.0",
+    "rimraf": "^2.5.4",
+    "temp": "^0.8.3"
+  },
+  "description": "A tester package for the Go language that uses `go test` to display test coverage.",
+  "devDependencies": {
+    "fs-plus": "^2.8.1",
+    "standard": "^8.0.0-beta.4"
+  },
+  "engines": {
+    "atom": ">=1.5.3 <2.0.0"
+  },
+  "homepage": "https://atom.io/packages/tester-go",
+  "keywords": [
+    "go",
+    "golang",
+    "test",
+    "tester",
+    "coverage"
+  ],
+  "license": "Apache-2.0",
+  "main": "./lib/main",
+  "name": "tester-go",
+  "optionalDependencies": {},
+  "package-deps": [
+    "go-config",
+    "go-get",
+    "linter"
+  ],
+  "readme": "# `tester-go` Atom Tester [![Build Status](https://travis-ci.org/joefitzgerald/tester-go.svg?branch=master)](https://travis-ci.org/joefitzgerald/tester-go) [![Build status](https://ci.appveyor.com/api/projects/status/wgivdhtdd0foyylw/branch/master?svg=true)](https://ci.appveyor.com/project/joefitzgerald/tester-go/branch/master)\n\n`tester-go` runs `go test -coverprofile` on your code and then displays coverage\ninformation in the editor. You can optionally configure this to be done\nautomatically on save.\n\nIt depends on the following packages:\n\n* [`go-config`](https://atom.io/packages/go-config)\n* [`go-get`](https://atom.io/packages/go-get)\n\n## Usage\n\n* Show coverage from the Command Palette with `Golang: gocover` or the shortcut <kbd>ctrl+alt+c</kbd>.\n* Clear coverage with `Golang: Cleargocover` or <kbd>ctrl+alt+shift+c</kbd>.\n\n## Configuration\n\n* `runCoverageOnSave`: Run `go test -coverprofile` on the current package each\ntime you save a `.go` file (default: `false`)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joefitzgerald/tester-go.git"
+  },
+  "standard": {
+    "globals": [
+      "atom",
+      "waitsForPromise"
+    ]
+  },
+  "version": "1.0.6"
+}

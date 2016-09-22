@@ -1,3 +1,6 @@
 .netrwhist
 
 config/nvim/plugged
+atom/
+!atom/keymap.cson
+!atom/packages/
