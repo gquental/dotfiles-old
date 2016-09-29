@@ -38,3 +38,5 @@
   'cmd-k k': 'pane:split-up-and-copy-active-item'
   'cmd-k j': 'pane:split-down-and-copy-active-item'
   'cmd-k l': 'pane:split-right-and-copy-active-item'
+'atom-text-editor':
+  'ctrl-k': 'window:focus-pane-above'
