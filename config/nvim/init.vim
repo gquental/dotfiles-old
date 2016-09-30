@@ -40,6 +40,8 @@ Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'carlitux/deoplete-ternjs'
 Plug 'scrooloose/nerdcommenter'
 
+set clipboard=unnamed
+
 call plug#end()
 
 " }}}
@@ -88,8 +90,6 @@ let g:airline_powerline_fonts=1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_theme='dracula'
-
-set clipboard=unnamed
 
 " disable mouse
 set mouse=c
