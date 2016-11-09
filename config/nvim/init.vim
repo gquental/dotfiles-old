@@ -117,6 +117,3 @@ let g:go_fmt_fail_silently = 1
 noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
-
-set splitbelow
-set splitright
