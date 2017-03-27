@@ -32,6 +32,7 @@ Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' } " JavaScript indent supp
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' } " CSS3 syntax support
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'stephpy/vim-yaml'
+Plug 'chase/vim-ansible-yaml'
 
 function! DoRemote(arg)
   UpdateRemotePlugins
@@ -118,5 +119,7 @@ noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
 
-set splitbelow
-set splitright
+" Set yaml to ansible
+augroup filetypedetect
+    au BufRead,BufNewFile *.yml set filetype=ansible
+augroup END
