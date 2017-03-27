@@ -1,0 +1,1 @@
+VIM_DIR="${HOME}/.vim"
