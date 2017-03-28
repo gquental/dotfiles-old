@@ -5,6 +5,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'joshdick/onedark.vim'
 
 Plug 'tpope/vim-fugitive' " amazing git wrapper for vim
+Plug 'airblade/vim-gitgutter'
 Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' } " JavaScript indent support
 Plug 'moll/vim-node', { 'for': 'javascript' } " node support
 Plug 'othree/yajs.vim', { 'for': 'javascript' }   " JavaScript syntax plugin
