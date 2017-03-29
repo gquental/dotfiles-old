@@ -29,6 +29,7 @@ Plug 'hail2u/vim-css3-syntax', { 'for': 'css' } " CSS3 syntax support
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'stephpy/vim-yaml'
 Plug 'chase/vim-ansible-yaml'
+Plug 'posva/vim-vue'
 
 function! DoRemote(arg)
   UpdateRemotePlugins
