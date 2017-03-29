@@ -1,6 +1,7 @@
 " change leader to comma
 let mapleader = ","
 let g:mapleader = ","
+set encoding=utf-8
 
 source ~/.config/nvim/bundles.vim
 source ~/.config/nvim/plugins.vim
