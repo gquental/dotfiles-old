@@ -30,6 +30,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'stephpy/vim-yaml'
 Plug 'chase/vim-ansible-yaml'
 Plug 'posva/vim-vue'
+Plug 'digitaltoad/vim-pug'
 
 function! DoRemote(arg)
   UpdateRemotePlugins
