@@ -6,6 +6,7 @@ set encoding=utf-8
 
 source ~/.config/nvim/bundles.vim
 source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/mappings.vim
 
 colorscheme onedark
 let g:onedark_termcolors=16
