@@ -22,6 +22,11 @@ set number " show line numbers
 " disable mouse
 set mouse=c
 
+set tabstop     =4
+set softtabstop =4
+set shiftwidth  =4
+set expandtab
+
 " Set yaml to ansible
 augroup filetypedetect
     au BufRead,BufNewFile *.yml set filetype=ansible
