@@ -36,6 +36,7 @@ inoremap <expr> <C-g> neocomplete#undo_completion()
 inoremap <expr> <C-l> neocomplete#complete_common_string()
 
 set nocompatible
+set backspace=2
 
 setlocal omnifunc=gocode#Complete
 
