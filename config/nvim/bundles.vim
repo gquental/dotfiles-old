@@ -17,7 +17,6 @@ Plug 'tpope/vim-sleuth' " detect indent style (tabs vs. spaces)
 Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'editorconfig/editorconfig-vim' " .editorconfig support
 Plug 'fatih/vim-go', { 'for': 'go' } " go support
 Plug 'mattn/emmet-vim', { 'for': 'html' } " emmet support for vim - easily create markdup wth CSS-like syntax
@@ -35,9 +34,8 @@ Plug 'digitaltoad/vim-pug'
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-Plug 'carlitux/deoplete-ternjs'
 Plug 'scrooloose/nerdcommenter'
+Plug 'roxma/nvim-completion-manager'
 
 set clipboard=unnamed
 
