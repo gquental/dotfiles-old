@@ -1,7 +1,7 @@
 " fzf
-nmap <silent> <leader>t :Files<cr>
+nmap <silent> <leader>t :GFiles<cr>
 nmap <silent> <leader>r :Buffers<cr>
-nmap <silent> <leader>e :GFiles?<cr>
+nmap <silent> <leader>e :Files<cr>
 nmap <silent> <leader>f :BLines<cr>
 
 nmap <silent> <leader>gc :Gcommit -S<cr>
