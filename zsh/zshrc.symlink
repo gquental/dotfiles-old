@@ -20,19 +20,20 @@ ZSH_THEME="pygmalion"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.bin/tmuxinator.zsh
 
 # Autoload ZSH files
 for config ($MYZSH/**/*.zsh) source $config
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/Applications/vlt/bin:/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-export EDITOR=vim
+export EDITOR=nvim
 
 export GOPATH=$HOME'/projects/go'
 export PATH="$PATH:$GOPATH/bin"

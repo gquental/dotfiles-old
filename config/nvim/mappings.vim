@@ -1,5 +1,5 @@
 " fzf
-nmap <silent> <leader>t :GFiles<cr>
+nmap <silent> <leader>t :Files<cr>
 nmap <silent> <leader>r :Buffers<cr>
 nmap <silent> <leader>e :GFiles?<cr>
 nmap <silent> <leader>f :BLines<cr>
@@ -26,3 +26,5 @@ noremap <Right> <NOP>
 noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
+
+noremap <leader>v :source $MYVIMRC<cr>
