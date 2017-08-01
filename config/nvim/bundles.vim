@@ -35,7 +35,9 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 Plug 'scrooloose/nerdcommenter'
-Plug 'roxma/nvim-completion-manager'
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-go', { 'do': 'make'}
 
 set clipboard=unnamed
 
