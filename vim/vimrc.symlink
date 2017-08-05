@@ -1,3 +1,5 @@
 source ~/.vim/bundle.vim
+source ~/.vim/plugins.vim
+source ~/.vim/interface.vim
 source ~/.vim/mappings.vim
-source ~/.vim/init.vim
+
