@@ -28,3 +28,5 @@ vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
 
 noremap <leader>v :source $MYVIMRC<cr>
+
+nmap <slient> <leader>vr :vertical resize 65<cr>
