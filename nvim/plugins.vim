@@ -37,3 +37,5 @@ let g:neosnippet#disable_runtime_snippets = {
 \ }
 " expand snippet on TAB or switch to the next suggestion with deoplete
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+
+set diffopt=vertical
