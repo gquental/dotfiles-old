@@ -20,6 +20,7 @@ Plug 'dyng/ctrlsf.vim'                                  " better text search
 Plug 'kopischke/vim-fetch'                              " open file with line and column number
 Plug 'yegappan/mru'                                     " most recently used files
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fuzzy search
+Plug 'christoomey/vim-tmux-navigator'
 
 " files
 Plug 'tpope/vim-eunuch'                                 " helpers for UNIX shell commands (mkdir, rename, etc.)
